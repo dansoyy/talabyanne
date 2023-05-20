@@ -12,8 +12,6 @@
 <body data-spy="scroll" data-target="#navbarResponsive">
 <div class="loader"></div>
 
-
-<!--- Start Home Section -->
 <div id="home">
 	<!--- Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -39,9 +37,8 @@
 			</ul>
 		</div>
 	</nav>
-	<!---End Navigation -->
 
-	<!--Start Landing Page section-->
+<!-- Home -->
 <div class="landing">
 	<div class="home-wrap">
 		<div class="home-inner">
@@ -325,8 +322,6 @@ window.onscroll = function() {
 	}
 	prevScrollpos = currentScrollPos;
 };
-
-// Add or remove 'hide-nav' class based on scroll position
 window.addEventListener('scroll', function() {
 	var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 	var headerHeight = document.querySelector('header').clientHeight;
@@ -337,6 +332,7 @@ window.addEventListener('scroll', function() {
 		document.querySelector('.navbar').classList.remove('hide-nav');
 	}
 });
+
 </script>
 
 <script type="text/javascript">
@@ -353,7 +349,7 @@ window.addEventListener('scroll', function() {
 
 <script type="text/javascript">
 	document.getElementById("contact-form").addEventListener("submit", function(event) {
-	  event.preventDefault(); // Prevent form submission
+	  event.preventDefault();
   
 	  var name = document.getElementById("name").value;
 	  var email = document.getElementById("email").value;
@@ -365,17 +361,14 @@ window.addEventListener('scroll', function() {
 
 <script type="text/javascript">
 	document.getElementById("email-contact").addEventListener("submit", function(event) {
-	  event.preventDefault(); // Prevent form submission
+	  event.preventDefault();
   
 	  var email = document.getElementById("emailaddress").value;
   
-	  // Perform any additional processing or validation here
-	  // For now, let's simply display a success message
+
 	  alert('Email Address sent successfully');
 	});
   </script>
-
-
 
 
 
